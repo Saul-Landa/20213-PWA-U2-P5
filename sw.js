@@ -1,6 +1,6 @@
 console.log("Sw; limpio");
 let ubicacion = self.location.href
-let URL = '/20213-PWA-U2-P5/sw.js'
+let URL = '/20213-PWA-U2-P5/'
 
 const CACHE_NAME = 'cache-v1'
 const CACHE_DYNAMIC_NAME = 'dynamic-v1'
