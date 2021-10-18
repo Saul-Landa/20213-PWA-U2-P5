@@ -25,7 +25,6 @@ self.addEventListener('install', event => {
     if(ubicacion.includes('localhost')){
         URL = '/'
     }
-    navigator.serviceWorker.register(swDirect);
 
     const promesa = caches.open(CACHE_STATIC_NAME)
         .then(cache => {
