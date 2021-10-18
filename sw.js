@@ -84,11 +84,11 @@ self.addEventListener('fetch', event => {
         }).catch(error => {
             console.log("Error al solicitar recurso");
             if(event.request.headers.get('accept').includes('text/html')){
-                return caches.match('/views/offline.html')
+                return caches.match(URL +'views/offline.html')
             }
             
             if(event.request.headers.get('accept').includes('image/')){
-                return caches.match('/img/noFound.jpg')
+                return caches.match(URL +'img/noFound.jpg')
             }
         })
 
